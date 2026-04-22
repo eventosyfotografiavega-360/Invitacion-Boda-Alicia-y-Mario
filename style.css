@@ -1,4 +1,4 @@
-/* Estilos Base - Clean Girl Aesthetic */
+/* Estética Clean Girl - Vega 360 Experiences */
 body {
     margin: 0;
     padding: 0;
@@ -6,100 +6,127 @@ body {
     background-color: #fdfaf6;
     color: #333;
     text-align: center;
-    line-height: 1.6;
 }
 
+/* Sección Inicial */
 .hero {
-    padding: 60px 20px;
+    padding: 80px 20px 40px;
     background-color: #fff;
+}
+
+.fecha-top {
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     letter-spacing: 6px;
     font-weight: 300;
-    margin: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 .divider {
-    width: 40px;
+    width: 60px;
     height: 1px;
     background: #c5a880;
-    margin: 20px auto;
+    margin: 25px auto;
 }
 
-/* Contador */
+.subtitulo {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: #c5a880;
+}
+
+/* Contador Estilizado */
 .contador-container {
-    padding: 40px 20px;
+    padding: 60px 20px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
 }
 
 #countdown {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 12px;
 }
 
 .time-block {
     background: #fff;
-    padding: 15px 10px;
-    min-width: 70px;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    padding: 20px 10px;
+    width: 80px;
+    border-radius: 2px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
 }
 
 .time-block span {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.8rem;
     display: block;
+    margin-bottom: 5px;
 }
 
 .time-block p {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
-    color: #888;
+    color: #999;
 }
 
-/* Galería */
+/* Galería Perfectamente Cuadrada */
 .galeria-section {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background-color: #fff;
 }
 
 .grid-fotos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    max-width: 500px;
+    gap: 15px;
+    max-width: 600px;
     margin: 0 auto;
+}
+
+.galeria-item {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 1 / 1; /* Esto hace que todas sean cuadradas sin importar la foto original */
 }
 
 .galeria-item img {
     width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 4px;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Ajusta la foto al cuadrado sin deformarla */
+    transition: transform 0.5s ease;
 }
 
-/* Botones */
+/* Botones Finales */
 .acciones {
-    padding: 40px 20px 80px;
+    padding: 80px 20px;
 }
 
 .btn {
     display: block;
-    max-width: 300px;
+    width: 90%;
+    max-width: 320px;
     margin: 15px auto;
-    padding: 18px;
+    padding: 20px;
     text-decoration: none;
     font-size: 0.8rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     border: 1px solid #c5a880;
     color: #c5a880;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn-dark {
