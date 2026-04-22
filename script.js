@@ -21,26 +21,35 @@ const updateCountdown = () => {
     }
 };
 
+// Ejecutar el contador cada segundo
 setInterval(updateCountdown, 1000);
 updateCountdown();
-// LÓGICA DE MÚSICA
+
+
+// ==========================================
+// 2. LÓGICA DE MÚSICA (Autoplay & Control)
+// ==========================================
+
 const musica = document.getElementById("miMusica");
 const musicIcon = document.getElementById("music-icon");
 
+// Función para pausar/reproducir manualmente
 function toggleMusica() {
     if (musica.paused) {
         musica.play();
-        musicIcon.innerText = "⏸️";
+        musicIcon.innerText = "⏸️"; // Icono de pausa
     } else {
         musica.pause();
-        musicIcon.innerText = "🎵";
+        musicIcon.innerText = "🎵"; // Icono de nota musical
     }
 }
 
-// Truco para reproducir al primer clic (Autoplay)
+// TRUCO DE AUTOPLAY:
+// Los navegadores bloquean la música automática. 
+// Este código hará que suene en cuanto el invitado haga su PRIMER CLIC en la página.
 document.addEventListener('click', function() {
     if (musica.paused) {
         musica.play();
         musicIcon.innerText = "⏸️";
     }
-}, { once: true }); // Solo se ejecuta una vez
+}, { once: true }); // El "{ once: true }" hace que esto solo pase la primera vez que den clic
