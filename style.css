@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfaf6; /* Beige muy clarito */
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin: 20px 0;
+}
+
+.divider {
+    width: 50px;
+    height: 1px;
+    background: #c5a880; /* Dorado suave */
+    margin: 20px auto;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.time-block {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    min-width: 60px;
+}
+
+.btn {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid #c5a880;
+    color: #c5a880;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.btn-dark {
+    background: #333;
+    color: white;
+    border: none;
+}
