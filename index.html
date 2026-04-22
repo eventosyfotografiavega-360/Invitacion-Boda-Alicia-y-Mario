@@ -3,35 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boda Alicia y Mario</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Boda Alicia y Mario | Invitación Digital</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.3.2/dist/luminous-basic.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <section class="hero">
-        <div class="header-logo">
-            <p>18 . 03 . 2026</p>
+        <div class="header-content">
+            <p class="fecha-top">22 . 08 . 2026</p>
             <h1>ALICIA & MARIO</h1>
             <div class="divider"></div>
+            <p class="subtitulo">¡NOS CASAMOS!</p>
         </div>
     </section>
 
-    <section class="contador">
+    <section class="contador-container">
         <h3>Faltan:</h3>
         <div id="countdown">
-            <div class="time-block"><span id="days">00</span><p>Días</p></div>
-            <div class="time-block"><span id="hours">00</span><p>Hrs</p></div>
-            <div class="time-block"><span id="minutes">00</span><p>Min</p></div>
-            <div class="time-block"><span id="seconds">00</span><p>Seg</p></div>
+            <div class="time-block">
+                <span id="days">00</span>
+                <p>Días</p>
+            </div>
+            <div class="time-block">
+                <span id="hours">00</span>
+                <p>Hrs</p>
+            </div>
+            <div class="time-block">
+                <span id="minutes">00</span>
+                <p>Min</p>
+            </div>
+            <div class="time-block">
+                <span id="seconds">00</span>
+                <p>Seg</p>
+            </div>
         </div>
     </section>
 
-    <section class="botones">
-        <a href="URL_DE_GOOGLE_MAPS" class="btn">VER UBICACIÓN</a>
-        <a href="https://wa.me/TUNUMERO" class="btn btn-dark">CONFIRMAR ASISTENCIA</a>
+    <section class="galeria-section">
+        <h3>Nuestra Historia</h3>
+        <div class="grid-fotos">
+            <a class="galeria-item" href="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=300" alt="Boda 1">
+            </a>
+            <a class="galeria-item" href="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=300" alt="Boda 2">
+            </a>
+            <a class="galeria-item" href="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=300" alt="Boda 3">
+            </a>
+            <a class="galeria-item" href="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=300" alt="Boda 4">
+            </a>
+        </div>
     </section>
 
+    <section class="acciones">
+        <div class="divider"></div>
+        <a href="https://maps.app.goo.gl/uX3f5H" target="_blank" class="btn">VER UBICACIÓN</a>
+        <a href="https://wa.me/521234567890?text=¡Hola!+Confirmo+mi+asistencia+a+la+boda." class="btn btn-dark">CONFIRMAR ASISTENCIA</a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.3.2/dist/Luminous.min.js"></script>
+    
     <script src="script.js"></script>
+
 </body>
 </html>
