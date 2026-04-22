@@ -23,3 +23,24 @@ const updateCountdown = () => {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+// LÓGICA DE MÚSICA
+const musica = document.getElementById("miMusica");
+const musicIcon = document.getElementById("music-icon");
+
+function toggleMusica() {
+    if (musica.paused) {
+        musica.play();
+        musicIcon.innerText = "⏸️";
+    } else {
+        musica.pause();
+        musicIcon.innerText = "🎵";
+    }
+}
+
+// Truco para reproducir al primer clic (Autoplay)
+document.addEventListener('click', function() {
+    if (musica.paused) {
+        musica.play();
+        musicIcon.innerText = "⏸️";
+    }
+}, { once: true }); // Solo se ejecuta una vez
